@@ -4,8 +4,8 @@ gem 'aws-sdk'
 
 require 'aws-sdk'
 
-environment = ENV["RAILS_ENV"]
-AWS_CREDENTIALS = YAML.load_file("config/whenever-elasticbeanstalk.yml")[environment]
+environment = ENV["RACK_ENV"]
+AWS_CREDENTIALS = YAML.load(ERB.new(File.new("config/whenever-elasticbeanstalk.yml").read).result)[environment]
 
 instance_id = if File.exists?("/var/app/support/instance_id")
   File.read("/var/app/support/instance_id")
