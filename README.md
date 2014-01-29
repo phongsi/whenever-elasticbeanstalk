@@ -76,11 +76,6 @@ staging:
   # region: 'eu-west-1'
 ```
 
-Make sure to add the `RAILS_ENV` environment variable to your environment if you haven't already done so. This variable is not created automatically by AWS. You can add the following line to your `.elasticbeanstalk/optionsettings.appname-env` file:
-```yaml
-RAILS_ENV=staging
-```
-
 ## Usage
 
 For `config/schedule.rb` usage, please see the documentation for the [Whenever gem](https://github.com/javan/whenever).
