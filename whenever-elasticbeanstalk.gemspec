@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'whenever-elasticbeanstalk/version'
 
 Gem::Specification.new do |gem|
-  gem.name          = "whenever-elasticbeanstalk"
+  gem.name          = "whenever-elasticbeanstalk-hd"
   gem.version       = Whenever::Elasticbeanstalk::VERSION
   gem.platform      = Gem::Platform::RUBY
   gem.authors       = ["Chad McGimpsey"]
